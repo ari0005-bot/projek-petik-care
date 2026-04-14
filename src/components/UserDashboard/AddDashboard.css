@@ -190,7 +190,7 @@
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
-  background: #28a745;
+  background: #018c7e;
   color: white;
   border: none;
   border-radius: 8px;
@@ -202,9 +202,9 @@
 }
 
 .submit-btn:hover {
-  background: #218838;
+  background: #016b63;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+  box-shadow: 0 4px 12px rgba(1, 140, 126, 0.3);
 }
 
 .back-btn {
@@ -212,7 +212,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  background: #018c7e;
+  background: #6c757d;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -222,9 +222,59 @@
 }
 
 .back-btn:hover {
-  background: #016b63;
+  background: #5a6268;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(1, 140, 126, 0.3);
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+}
+
+/* Additional Form Styling */
+.form-textarea::placeholder,
+.form-input::placeholder {
+  color: #999;
+}
+
+.form-textarea:focus,
+.form-input:focus {
+  outline: none;
+  border-color: #018c7e;
+  box-shadow: 0 0 0 3px rgba(1, 140, 126, 0.1);
+}
+
+/* Error and Success Messages */
+.error-message {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+/* Spinner */
+.spinner-small {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @media (max-width: 768px) {

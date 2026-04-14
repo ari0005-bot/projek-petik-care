@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./AddDashboard.css";
 
 const AddDashboard = () => {
-
   return (
     <div className="add-dashboard-container">
       {/* Header Banner */}

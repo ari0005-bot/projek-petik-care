@@ -21,11 +21,7 @@ const UserDashboard = () => {
             <FiHome />
             <span>Home</span>
           </NavLink>
-          <NavLink to="/dashboard/users" className="sidebar-btn">
-            <FiUsers />
-            <span>Pengguna</span>
-          </NavLink>
-          <NavLink to="/dashboard/add" className="sidebar-btn">
+                    <NavLink to="/dashboard/add" className="sidebar-btn">
             <FiPaperclip />
             <span>Tambah Keluhan</span>
           </NavLink>

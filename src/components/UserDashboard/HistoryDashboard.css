@@ -2,14 +2,14 @@
 .history-container {
   display: flex;
   min-height: 100vh;
-  background: linear-gradient(135deg, #018c7e 0%, #ffeca0 100%);
+  background: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Sidebar Styles - Inherit from UserDashboard */
 .sidebar {
   width: 250px;
-  background: linear-gradient(135deg, #018c7e 0%, #016b63 100%);
+  background: #018c7e;
   backdrop-filter: blur(10px);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
@@ -59,7 +59,7 @@
 }
 
 .sidebar-btn.active {
-  background: linear-gradient(135deg, #ffeca0, #018c7e);
+  background: #ffeca0;
   color: #018c7e;
   box-shadow: 0 4px 15px rgba(255, 236, 160, 0.3);
 }
@@ -90,8 +90,8 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #667eea;
+  background: #018c7e;
+  color: white;
   text-decoration: none;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -99,9 +99,9 @@
 }
 
 .back-btn:hover {
-  background: rgba(255, 255, 255, 1);
+  background: #016b63;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(1, 140, 126, 0.3);
 }
 
 .history-header h1 {
@@ -171,22 +171,22 @@
 }
 
 .stat-icon.total {
-  background: linear-gradient(135deg, #018c7e, #ffeca0);
-  color: #018c7e;
+  background: #018c7e;
+  color: white;
 }
 
 .stat-icon.pending {
-  background: linear-gradient(135deg, #ffeca0, #018c7e);
+  background: #ffeca0;
   color: #018c7e;
 }
 
 .stat-icon.progress {
-  background: linear-gradient(135deg, #018c7e, #ffeca0);
+  background: #018c7e;
   color: white;
 }
 
 .stat-icon.completed {
-  background: linear-gradient(135deg, #ffeca0, #018c7e);
+  background: #ffeca0;
   color: #018c7e;
 }
 
@@ -551,8 +551,8 @@
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background: linear-gradient(135deg, #018c7e, #ffeca0);
-  color: #018c7e;
+  background: #018c7e;
+  color: white;
   text-decoration: none;
   border-radius: 8px;
   transition: all 0.3s ease;

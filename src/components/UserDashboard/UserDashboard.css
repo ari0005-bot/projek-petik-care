@@ -99,18 +99,20 @@
 .back-btn {
   display: inline-flex;
   align-items: center;
-  color: #018c7e;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #018c7e;
+  color: white;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  padding: 8px 16px;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .back-btn:hover {
-  background: #f8f9fa;
-  color: #016b63;
+  background: #016b63;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(1, 140, 126, 0.3);
 }
 
 .dashboard-header h1 {

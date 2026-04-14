@@ -1,6 +1,6 @@
 .dashboard-container {
   min-height: 100vh;
-  background: #f8f9fa;
+  background: linear-gradient(135deg, #018c7e 0%, #ffeca0 100%);
   font-family:
     "Poppins",
     -apple-system,
@@ -15,7 +15,7 @@
 /* Sidebar */
 .sidebar {
   width: 280px;
-  background: #018C7E;
+  background: linear-gradient(135deg, #018c7e 0%, #016b63 100%);
   color: white;
   padding: 0;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);

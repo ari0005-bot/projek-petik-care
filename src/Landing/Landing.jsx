@@ -10,7 +10,7 @@ const Landing = () => {
         <div className="container">
           <div className="nav-wrapper">
             <div className="logo">
-              <span className="logo-text">PETIK Care</span>
+              <span className="logo-text">PeTIK Care</span>
             </div>
             <nav className="nav-menu">
               <ul>
@@ -40,7 +40,7 @@ const Landing = () => {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1>Sehat Bersama PETIK</h1>
+              <h1>Sehat Bersama PeTIK</h1>
               <p>
                 Ikhtiar menjaga kesehatan santri melalui layanan yang mudah
                 diakses dan terpercaya..

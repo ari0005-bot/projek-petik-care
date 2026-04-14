@@ -1,27 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./AddDashboard.css";
 
 const AddDashboard = () => {
-  const [formData, setFormData] = useState({
-    complaint: "",
-    illnessDuration: "",
-    symptoms: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    console.log("Form submitted:", formData);
-  };
 
   return (
     <div className="add-dashboard-container">
@@ -50,7 +31,7 @@ const AddDashboard = () => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="complaint-form">
+        <form className="complaint-form">
           {/* Keluhan Anda Field */}
           <div className="form-group">
             <label htmlFor="complaint" className="form-label">
@@ -59,11 +40,8 @@ const AddDashboard = () => {
             <textarea
               id="complaint"
               name="complaint"
-              value={formData.complaint}
-              onChange={handleChange}
               placeholder="Isi disini..."
               className="form-textarea"
-              required
             />
           </div>
 
@@ -77,11 +55,8 @@ const AddDashboard = () => {
                 type="text"
                 id="illnessDuration"
                 name="illnessDuration"
-                value={formData.illnessDuration}
-                onChange={handleChange}
                 placeholder="MM/DD/YY"
                 className="form-input"
-                required
               />
               <div className="calendar-icon">
                 <svg
@@ -110,17 +85,14 @@ const AddDashboard = () => {
               type="text"
               id="symptoms"
               name="symptoms"
-              value={formData.symptoms}
-              onChange={handleChange}
               placeholder="Batuk"
               className="form-input"
-              required
             />
           </div>
 
           {/* Action Buttons */}
           <div className="form-actions">
-            <button type="submit" className="submit-btn">
+            <button type="button" className="submit-btn">
               <svg
                 width="16"
                 height="16"

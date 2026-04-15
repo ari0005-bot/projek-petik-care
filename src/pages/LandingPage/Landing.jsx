@@ -28,7 +28,7 @@ const Landing = () => {
                 </li>
               </ul>
             </nav>
-            <Link to="/dashboard" className="about-btn">
+            <Link to="/login" className="about-btn">
               Masuk
             </Link>
           </div>
@@ -278,23 +278,14 @@ const Landing = () => {
             <div className="footer-section">
               <h4>Layanan</h4>
               <ul>
-                <li>
-                  <a href="#">Konsultasi Kesehatan</a>
-                </li>
-                <li>
-                  <a href="#">Pemeriksaan Umum</a>
-                </li>
-                <li>
-                  <a href="#">Izin Sakit</a>
-                </li>
+                <li>Konsultasi Kesehatan</li>
+                <li>Pemeriksaan Umum</li>
+                <li>Izin Sakit</li>
               </ul>
             </div>
             <div className="footer-section">
               <h4>Navigasi</h4>
               <ul>
-                <li>
-                  <a href="#">Beranda</a>
-                </li>
                 <li>
                   <a href="#">Layanan</a>
                 </li>

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+.login-container h2 {
+  font-family: "Poppins";
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.login-left {
+  flex: 1;
+  background: #0aa38f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.login-right {
+  flex: 1;
+  background: #fff5dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.login-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 140px;
+  height: 100%;
+  background: linear-gradient(to right, #0aa38f 50%, #fff5dd 50%);
+  transform: translateX(-50%) skewX(-10deg);
+  z-index: 3;
+}
+.left-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-box img {
+  width: 300px;
+  height: auto;
+}
+.icon {
+  font-size: 40px;
+  color: #0aa38f;
+  font-weight: bold;
+}
+
+.login-right {
+  flex: 1;
+  background: #fff5dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 320px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: "Poppins";
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+  font-family: "Poppins";
+}
+
+.input-group input:focus {
+  border-color: #0aa38f;
+  box-shadow: 0 0 0 2px rgba(10, 163, 143, 0.2);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0aa38f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+  font-family: "Poppins";
+}
+
+button:hover {
+  background: #088777;
+}
